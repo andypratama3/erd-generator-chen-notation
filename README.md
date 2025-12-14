@@ -130,7 +130,7 @@ erd-generator-chen-notation/
 
 **PENTING:**
 - ✅ **Edit `database.py`** untuk customization (warna, layout, skip columns)
-- ❌ **JANGAN edit `generate-erd.py`** - script akan di-obfuscate
+- ❌ **JANGAN edit `generate-erd.py`** - script obfuscate
 
 ---
 
@@ -265,7 +265,7 @@ python3 generate-erd.py
 ```
 database.py (Config)  →  generate-erd.py (Logic)  →  Output .drawio
      ↑                           ↓
-  User Edit              Read-only (akan di-obfuscate)
+  User Edit              Read-only (obfuscate file)
 ```
 
 ### 2. **Parsing SQL**
@@ -340,7 +340,7 @@ python3 generate-erd.py
 
 ### Error: "ModuleNotFoundError: lxml"
 ```bash
-pip install lxml
+pip install -r requirements.txt
 ```
 
 ### Error: SQL parsing gagal
@@ -464,7 +464,7 @@ Jika ada issue:
 2. ✅ Library `lxml` sudah terinstall
 3. ✅ File `database.py` ada di folder yang sama dengan `generate-erd.py`
 4. ✅ Edit **HANYA** `database.py` untuk customization
-5. ✅ **JANGAN** edit `generate-erd.py` (file akan di-obfuscate)
+5. ✅ **JANGAN** edit `generate-erd.py` (Jangan Merubah File ini)
 
 ---
 
@@ -478,7 +478,7 @@ Jika ada issue:
 - Test config changes dengan file SQL kecil dulu
 
 ### ❌ DON'T:
-- Jangan edit `generate-erd.py` (akan di-obfuscate)
+- Jangan edit `generate-erd.py` (obfuscate-file)
 - Jangan hardcode config di `generate-erd.py`
 - Jangan skip primary keys di `SKIP_COLUMNS`
 - Jangan hapus `database.py` (mandatory file)
