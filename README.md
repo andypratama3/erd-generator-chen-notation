@@ -158,7 +158,6 @@ erd-generator-chen-notation/
     ├── SETUP_GUIDE.md           (Detailed setup guide)
     ├── DATABASE_EXAMPLE.md      (Contoh database 5 tables)
     │
-    ├── database.py              (Configuration - user edit)
     ├── generate-erd.py          (Main script - don't edit)
     ├── requirements.txt         (Dependencies)
     │
