@@ -50,7 +50,7 @@ cd erd-generator-chen-notation/dist
 
 ### 2. Install Dependencies
 ```bash
-pip install lxml
+pip install -r requirements.txt
 ```
 
 ### 3. Siapkan File (PENTING!)
