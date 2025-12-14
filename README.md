@@ -9,7 +9,7 @@ Menggunakan **Chen's ER Model** dengan:
 - 🔗 Cardinality (1/M)
 
 ---
-
+# ℹ️ NOTE
 ---
 
 > **⚠️ CATATAN PENTING:**  
