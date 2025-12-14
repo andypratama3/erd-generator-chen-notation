@@ -53,7 +53,10 @@ mysqldump -u username -p database_name > my-database.sql
 cp my-database.sql dist/
 ```
 
-### 4. Update Konfigurasi (database.py)
+### 4. Update Konfigurasi (database.py) - OPTIONAL
+
+Jika ingin menggunakan config file daripada interactive input:
+
 ```python
 # Edit dist/database.py
 
@@ -67,12 +70,41 @@ OUTPUT_FILE = "MY_ERD.drawio"
 DIAGRAM_NAME = "My Database ERD"
 ```
 
+**Catatan:** Jika file `database.py` ada dan dikonfigurasi, script akan langsung menggunakan config tersebut. Jika tidak, script akan bertanya secara interactive.
+
 ### 5. Jalankan Script
 ```bash
-python generate-erd.py
+python3 generate-erd.py
 ```
 
-Output akan menampilkan:
+Script akan meminta input dari Anda:
+
+**Step 1: Pilih File SQL**
+```
+📂 File SQL yang tersedia:
+   1. database-example.sql
+   2. database-ansor.sql
+
+🔍 Pilih file SQL:
+Masukkan nomor (1-2): 1
+✅ File dipilih: database-example.sql
+```
+
+**Step 2: Tentukan Nama Output**
+```
+💾 Nama output file (default: ERD_FINAL.drawio):
+Masukkan nama (atau tekan Enter): my-database-erd
+✅ Output: my-database-erd.drawio
+```
+
+**Step 3: Tentukan Nama Diagram**
+```
+📊 Nama diagram (default: ERD Database):
+Masukkan nama (atau tekan Enter): My Company Database
+✅ Diagram: My Company Database
+```
+
+**Step 4: Processing Otomatis**
 ```
 📖 Membaca file SQL...
 🔍 Parsing database...
@@ -83,13 +115,17 @@ Output akan menampilkan:
 💎 Membuat relasi 1:N...
 🔗 Membuat relasi M:N...
 💾 Menyimpan file...
+```
+
+**Output Final:**
+```
 ======================================================================
 ✅ ERD CHEN SESUAI GAMBAR BERHASIL DIBUAT!
 ======================================================================
 📊 Total Tabel         : 5
 🔗 Total Relasi        : 6
 📈 Jumlah Layer        : 2
-💾 File Output         : MY_ERD.drawio
+💾 File Output         : my-database-erd.drawio
 ======================================================================
 ```
 
@@ -136,7 +172,31 @@ erd-generator-chen-notation/
 
 ## 🎯 Penggunaan Sehari-hari
 
-### Use Case 1: Database Baru
+### Use Case 1: Interactive Mode (Recommended)
+```bash
+# 1. Jalankan script
+cd dist
+python3 generate-erd.py
+
+# 2. Script akan menanyakan:
+# - Pilih SQL file
+# - Nama output file
+# - Nama diagram
+
+# 3. ERD otomatis di-generate dengan nama yang Anda tentukan
+```
+
+### Use Case 2: Menggunakan Config File
+```bash
+# 1. Edit database.py
+nano dist/database.py
+# Ubah SQL_FILE, OUTPUT_FILE, DIAGRAM_NAME
+
+# 2. Jalankan script (langsung tanpa input)
+python3 dist/generate-erd.py
+```
+
+### Use Case 3: Database Baru
 ```bash
 # 1. Export database
 mysqldump -u root -p my_database > my_database.sql
