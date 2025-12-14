@@ -3,7 +3,7 @@
 # ======================================================
 
 # Nama file SQL
-SQL_FILE = "database-ansor.sql"
+SQL_FILE = "database-example.sql"
 
 # Nama file output
 OUTPUT_FILE = "ANSOR_ERD_CHEN_FINAL.drawio"
