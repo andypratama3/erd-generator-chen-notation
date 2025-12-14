@@ -5,7 +5,7 @@ Aplikasi Python untuk **membuat Entity-Relationship Diagram (ERD)** dalam format
 Menggunakan **Chen's ER Model** dengan:
 - 🏢 Entity (Rectangle)
 - 📝 Attribute (Ellipse)
-- 💎 Relationship (Diamond)
+- 💎 Relationship (Diamond) dengan label "memiliki"
 - 🔗 Cardinality (1/M)
 
 ---
@@ -14,16 +14,33 @@ Menggunakan **Chen's ER Model** dengan:
 
 ✅ **Parse SQL Otomatis** - Baca file SQL dan ekstrak struktur database  
 ✅ **Generate ERD Chen** - Buat diagram dengan model Chen yang rapi  
-✅ **Support Semua Relasi** - Handle 1:N, M:N, dan self-referencing relationships  
+✅ **Support Semua Relasi** - Handle 1:N dan M:N relationships  
 ✅ **Cardinality Labels** - Tampilkan M & 1 secara otomatis  
 ✅ **Dynamic Layout** - Spacing otomatis berdasarkan jumlah attribute  
-✅ **Draw.io Format** - Output langsung buka di draw.io, no conversion needed  
-✅ **Customizable** - Edit warna, ukuran, spacing sesuai kebutuhan  
-✅ **Zero Dependencies** - Hanya butuh `lxml` (lightweight)
+✅ **Draw.io Format** - Output langsung buka di draw.io  
+✅ **Interactive Mode** - Input file, output name, dan diagram name secara interaktif  
+✅ **Customizable Config** - Edit warna, layout, dan skip columns via `database.py`  
+✅ **Zero Dependencies** - Hanya butuh `lxml` (lightweight)  
+✅ **Separation of Concerns** - Config terpisah dari logic (obfuscation-ready)
 
 ---
+## 🎨 Output Preview
 
-## 🚀 Quick Start (5 Menit)
+### Diagram yang Dihasilkan
+
+![ERD Chen Notation Example](dist/ERD_FINAL.drawio.png)
+
+*Contoh ERD yang dihasilkan oleh script dengan Chen Notation*
+Ketika dibuka di draw.io:
+- ✅ Semua entity terlihat rapi
+- ✅ Relationship diamond dengan label "memiliki"
+- ✅ Cardinality (M & 1) di garis relasi
+- ✅ Attribute teorganisir per entity
+- ✅ Layout hierarki otomatis
+- ✅ Bisa di-edit & customize langsung di draw.io
+
+
+## 🚀 Quick Start
 
 ### 1. Clone Repository
 ```bash
@@ -33,116 +50,67 @@ cd erd-generator-chen-notation/dist
 
 ### 2. Install Dependencies
 ```bash
-pip install -r requirements.txt
+pip install lxml
 ```
 
-Hanya butuh 1 library:
-- `lxml==4.9.3` (untuk generate XML)
-
-### 3. Siapkan SQL File
+### 3. Siapkan File (PENTING!)
 ```bash
-# Gunakan contoh yang sudah ada:
-# - database-example.sql (simple 5 tables)
-# - database-ansor.sql (complex 25+ tables)
+# 1. Pastikan ada file database.py (sudah include di repo)
+ls database.py  # ✅ Harus ada!
 
-# Atau buat SQL file sendiri:
-# 1. Export database Anda:
-mysqldump -u username -p database_name > my-database.sql
-
-# 2. Copy ke folder dist/
-cp my-database.sql dist/
+# 2. Letakkan file SQL Anda di folder dist/
+cp ~/my-database.sql .
 ```
 
-### 4. Update Konfigurasi (database.py) - OPTIONAL
-
-Jika ingin menggunakan config file daripada interactive input:
-
-```python
-# Edit dist/database.py
-
-# Ubah nama SQL file
-SQL_FILE = "database-example.sql"  # atau "my-database.sql"
-
-# Ubah nama output
-OUTPUT_FILE = "MY_ERD.drawio"
-
-# Ubah judul diagram
-DIAGRAM_NAME = "My Database ERD"
-```
-
-**Catatan:** Jika file `database.py` ada dan dikonfigurasi, script akan langsung menggunakan config tersebut. Jika tidak, script akan bertanya secara interactive.
-
-### 5. Jalankan Script
+### 4. Jalankan Script
 ```bash
 python3 generate-erd.py
 ```
 
-Script akan meminta input dari Anda:
+Script akan meminta input:
 
 **Step 1: Pilih File SQL**
 ```
 📂 File SQL yang tersedia:
-   1. database-example.sql
+   1. database-example.sql (default)
    2. database-ansor.sql
 
 🔍 Pilih file SQL:
-Masukkan nomor (1-2): 1
+   Tekan Enter untuk default: database-example.sql
+Masukkan nomor (1-2) atau Enter: 1
 ✅ File dipilih: database-example.sql
 ```
 
 **Step 2: Tentukan Nama Output**
 ```
-💾 Nama output file (default: ERD_FINAL.drawio):
-Masukkan nama (atau tekan Enter): my-database-erd
-✅ Output: my-database-erd.drawio
+💾 Nama output file (default: erd-chen-notation.drawio):
+Masukkan nama (atau tekan Enter): my-erd
+✅ Output: my-erd.drawio
 ```
 
 **Step 3: Tentukan Nama Diagram**
 ```
-📊 Nama diagram (default: ERD Database):
-Masukkan nama (atau tekan Enter): My Company Database
-✅ Diagram: My Company Database
+📊 Nama diagram (default: ERD Chen FINAL):
+Masukkan nama (atau tekan Enter): My Database
+✅ Diagram: My Database
 ```
 
-**Step 4: Processing Otomatis**
-```
-📖 Membaca file SQL...
-🔍 Parsing database...
-📊 Menghitung attribute per tabel...
-📈 Menghitung layer layout...
-🎨 Membuat mxGraph XML...
-🏢 Membuat entitas...
-💎 Membuat relasi 1:N...
-🔗 Membuat relasi M:N...
-💾 Menyimpan file...
-```
-
-**Output Final:**
+**Output:**
 ```
 ======================================================================
-✅ ERD CHEN SESUAI GAMBAR BERHASIL DIBUAT!
+✅ ERD CHEN BERHASIL DIBUAT!
 ======================================================================
 📊 Total Tabel         : 5
 🔗 Total Relasi        : 6
 📈 Jumlah Layer        : 2
-💾 File Output         : my-database-erd.drawio
+💾 File Output         : my-erd.drawio
 ======================================================================
 ```
 
-### 6. Buka di Draw.io
-```bash
-# Opsi 1: Online (recommended)
+### 5. Buka di Draw.io
 1. Buka https://app.diagrams.net
-2. File → Open → Pilih file .drawio yang baru dibuat
-3. Diagram langsung muncul, bisa di-edit!
-
-# Opsi 2: Desktop
-1. Download draw.io desktop: https://github.com/jgraph/drawio-desktop
-2. Double-click file .drawio
-3. Edit & export sesuai kebutuhan
-```
-
-**Done!** Diagram ERD Anda siap! 🎉
+2. File → Open → Pilih file `.drawio`
+3. Diagram langsung muncul!
 
 ---
 
@@ -151,363 +119,335 @@ Masukkan nama (atau tekan Enter): My Company Database
 ```
 erd-generator-chen-notation/
 │
-├── README.md                    (File ini - Main documentation)
+├── README.md
 │
-└── dist/                        (Working directory)
-    ├── README.md                (Detailed documentation)
-    ├── SETUP_GUIDE.md           (Detailed setup guide)
-    ├── DATABASE_EXAMPLE.md      (Contoh database 5 tables)
-    │
-    ├── generate-erd.py          (Main script - don't edit)
-    ├── requirements.txt         (Dependencies)
-    │
-    ├── database-example.sql     (Simple example: 5 tables)
-    ├── database-ansor.sql       (Complex example: 25+ tables)
-    │
-    └── .gitignore               (Git config)
+└── dist/
+    ├── database.py              (⚙️ EDIT CONFIG DI SINI)
+    ├── generate-erd.py          (🔒 JANGAN EDIT - Read-only)
+    ├── database-example.sql     (📄 Contoh SQL)
+    └── database-ansor.sql       (📄 Contoh SQL kompleks)
 ```
+
+**PENTING:**
+- ✅ **Edit `database.py`** untuk customization (warna, layout, skip columns)
+- ❌ **JANGAN edit `generate-erd.py`** - script akan di-obfuscate
 
 ---
 
-## 🎯 Penggunaan Sehari-hari
+## 🔧 Customization via `database.py`
 
-### Use Case 1: Interactive Mode (Recommended)
-```bash
-# 1. Jalankan script
-cd dist
-python3 generate-erd.py
+**SEMUA KUSTOMISASI dilakukan di file `database.py`**. File `generate-erd.py` adalah **read-only** dan tidak boleh diubah.
 
-# 2. Script akan menanyakan:
-# - Pilih SQL file
-# - Nama output file
-# - Nama diagram
-
-# 3. ERD otomatis di-generate dengan nama yang Anda tentukan
-```
-
-### Use Case 2: Menggunakan Config File
-```bash
-# 1. Edit database.py
-nano dist/database.py
-# Ubah SQL_FILE, OUTPUT_FILE, DIAGRAM_NAME
-
-# 2. Jalankan script (langsung tanpa input)
-python3 dist/generate-erd.py
-```
-
-### Use Case 3: Database Baru
-```bash
-# 1. Export database
-mysqldump -u root -p my_database > my_database.sql
-
-# 2. Copy ke folder
-cp my_database.sql dist/
-
-# 3. Edit database.py
-nano dist/database.py
-# Ubah: SQL_FILE = "my_database.sql"
-
-# 4. Generate ERD
-cd dist
-python generate-erd.py
-
-# 5. Buka MY_ERD.drawio di draw.io
-```
-
-### Use Case 2: Customize Style
+### 1. **Ganti Default File**
 ```python
-# Edit dist/database.py
+# Edit database.py
+SQL_FILE = "my-database.sql"  # Default SQL file
+OUTPUT_FILE = "MY_ERD.drawio"  # Default output name
+DIAGRAM_NAME = "My Database ERD"  # Default diagram title
+```
 
-# Ubah warna
+### 2. **Ubah Warna**
+```python
+# Edit warna border, fill, dan line
 COLORS = {
     "border": "#FF0000",   # Merah
     "fill": "#FFFF00",     # Kuning
     "line": "#0000FF",     # Biru
 }
-
-# Ubah spacing
-LAYOUT = {
-    "col_width": 700,      # Jarak antar table lebih jauh
-    "padding_x": 200,
-    "padding_y": 200,
-}
-
-# Run again
-python generate-erd.py
 ```
 
-### Use Case 3: Skip Kolom Tertentu
+### 3. **Ubah Layout & Spacing**
 ```python
-# Edit dist/database.py
+LAYOUT = {
+    "padding_x": 200,       # Jarak horizontal lebih jauh
+    "padding_y": 200,       # Jarak vertical lebih jauh
+    "col_width": 600,       # Jarak antar kolom tabel
+    "entity_width": 180,    # Lebar entity box
+    "entity_height": 50,    # Tinggi entity box
+    "attr_spacing": 40,     # Jarak antar attribute
+    "attr_per_side": 15,    # Max attribute per sisi
+}
+```
 
-# Tambah kolom yang ingin di-skip
+### 4. **Skip Kolom Tertentu**
+```python
 SKIP_COLUMNS = {
     'created_at',
     'updated_at',
     'deleted_at',
     'remember_token',
     'email_verified_at',
-    'your_custom_column',  # Tambah di sini
+    'your_custom_column',   # Tambah kolom yang ingin di-skip
+}
+```
+
+### 5. **Custom Styling Detail**
+```python
+# Entity styling
+ENTITY_STYLE = {
+    "strokeWidth": "2",      # Border lebih tebal
+    "fontSize": "12",        # Font lebih besar
+    "fontStyle": "1",        # Bold
 }
 
-# Run again
-python generate-erd.py
+# Attribute styling
+ATTRIBUTE_STYLE = {
+    "strokeWidth": "1",
+    "fontSize": "8",         # Font attribute
+}
+
+# Relationship diamond styling
+RELATIONSHIP_STYLE = {
+    "strokeWidth": "1.5",
+    "fontSize": "9",
+}
 ```
 
 ---
 
-## 📊 Contoh Database
+## 🎯 Workflow Sehari-hari
 
-### Database Sederhana (5 Tables)
-File: `database-example.sql`
-
-```
-Sistem Manajemen Karyawan & Proyek dengan relasi:
-- DEPARTMENTS (Master)
-- POSITIONS (Master)
-- EMPLOYEES (FK → DEPARTMENTS, POSITIONS)
-- PROJECTS (FK → DEPARTMENTS)
-- PROJECT_ASSIGNMENTS (M:N Junction)
-```
-
-Jalankan:
+### Use Case 1: Database Baru
 ```bash
-python generate-erd.py
-# Output: ANSOR_ERD_CHEN_FINAL.drawio
+# 1. Export database
+mysqldump -u root -p my_database > my_database.sql
+
+# 2. Copy ke folder dist/
+cp my_database.sql dist/
+
+# 3. Edit database.py (opsional - set default)
+nano dist/database.py
+# Ubah: SQL_FILE = "my_database.sql"
+
+# 4. Generate ERD
+cd dist
+python3 generate-erd.py
+# Atau langsung tekan Enter 3x jika sudah set default
+
+# 5. Buka file .drawio di draw.io
 ```
 
-### Database Kompleks (25+ Tables)
-File: `database-ansor.sql`
+### Use Case 2: Ubah Style
+```bash
+# 1. Edit database.py
+nano dist/database.py
 
+# 2. Ubah warna/layout sesuai kebutuhan
+COLORS = {"border": "#FF0000", ...}
+
+# 3. Generate ulang
+python3 generate-erd.py
+
+# 4. Buka file baru di draw.io
 ```
-Sistem Organisasi ANSOR dengan relasi kompleks:
-- Struktur organisasi (hierarki)
-- Manajemen anggota & kepemimpinan
-- Program pelatihan & sertifikasi
-- Riwayat pendidikan, pekerjaan, skill
-- Manajemen kegiatan & partisipasi
+
+### Use Case 3: Skip Kolom Custom
+```bash
+# 1. Edit database.py
+nano dist/database.py
+
+# 2. Tambah kolom di SKIP_COLUMNS
+SKIP_COLUMNS = {
+    'created_at',
+    'updated_at',
+    'my_custom_field',  # Tambah di sini
+}
+
+# 3. Generate ulang
+python3 generate-erd.py
 ```
 
 ---
 
-## 🔧 Konfigurasi Detail
+## 📊 Cara Kerja Script
 
-### database.py - Configuration File
-
-```python
-# 1. SQL FILE
-SQL_FILE = "database-example.sql"  # Ganti dengan nama file Anda
-
-# 2. OUTPUT FILE
-OUTPUT_FILE = "MY_ERD.drawio"      # Nama output diagram
-
-# 3. DIAGRAM NAME
-DIAGRAM_NAME = "My Database"       # Judul diagram
-
-# 4. STYLING
-COLORS = {
-    "border": "#000000",  # Warna border (hitam)
-    "fill": "#ffffff",    # Warna fill (putih)
-    "line": "#000000",    # Warna garis (hitam)
-}
-
-# 5. LAYOUT
-LAYOUT = {
-    "padding_x": 150,           # Padding horizontal
-    "padding_y": 150,           # Padding vertical
-    "col_width": 500,           # Jarak antar table
-    "entity_width": 160,        # Lebar entity box
-    "entity_height": 45,        # Tinggi entity box
-    "attr_spacing": 32,         # Jarak antar attribute
-    "attr_per_side": 12,        # Max attribute per sisi
-}
-
-# 6. SKIP COLUMNS
-SKIP_COLUMNS = {
-    'created_at',
-    'updated_at',
-    'deleted_at',
-    'remember_token',
-    'email_verified_at',
-}
+### 1. **Arsitektur Separation**
 ```
+database.py (Config)  →  generate-erd.py (Logic)  →  Output .drawio
+     ↑                           ↓
+  User Edit              Read-only (akan di-obfuscate)
+```
+
+### 2. **Parsing SQL**
+Script membaca file SQL dan mengekstrak:
+- Nama tabel
+- Kolom (attributes)
+- Primary keys
+- Foreign keys
+
+### 3. **Deteksi Relasi**
+- **1:N Relations**: Deteksi via FOREIGN KEY
+- **M:N Relations**: Deteksi junction tables (tables dengan ≥2 foreign keys)
+
+### 4. **Skip Columns Otomatis**
+Script otomatis skip kolom yang didefinisikan di `SKIP_COLUMNS` dalam `database.py`:
+- `created_at`, `updated_at`, `deleted_at` (default)
+- Bisa ditambah custom columns
+
+### 5. **Layout Algorithm**
+- Menggunakan topological sorting untuk layering
+- Dynamic spacing berdasarkan jumlah attributes
+- Attributes dibagi kiri-kanan (max configurable per sisi)
+
+### 6. **Generate Draw.io XML**
+- Create entities (rectangles)
+- Create attributes (ellipses) dengan garis ke entity
+- Create relationship diamonds dengan label "memiliki"
+- Add cardinality labels (M dan 1)
+
+---
+
+## 📊 Contoh Output
+
+### Relasi 1:N
+```
+DEPARTMENTS (1) ──── ◇ memiliki ◇ ──── (M) EMPLOYEES
+```
+
+### Relasi M:N
+```
+EMPLOYEES (M) ──── ◇ memiliki ◇ ──── (M) PROJECTS
+       (via junction table: PROJECT_ASSIGNMENTS)
+```
+
+### Attributes
+- Primary key: **Bold ellipse** dengan border lebih tebal
+- Regular attributes: Normal ellipse
+- Foreign keys: Tidak ditampilkan sebagai attribute (sudah jadi relasi)
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Error: "FileNotFoundError: database-example.sql"
+### Error: "database.py tidak ditemukan!"
 ```bash
-# Solusi: Pastikan file ada di folder dist/
-ls dist/
+# Pastikan file database.py ada
+ls database.py
 
-# Atau copy dari template
-cp database-example.sql dist/
+# Jika tidak ada, copy dari template atau repo
+cp database.py.example database.py
+```
+
+### Error: "Tidak ada file SQL di folder ini!"
+```bash
+# Pastikan file SQL ada di folder yang sama dengan script
+ls *.sql
+
+# Atau pindah ke folder dist/
+cd dist
+python3 generate-erd.py
 ```
 
 ### Error: "ModuleNotFoundError: lxml"
 ```bash
-# Solusi: Install dependencies
-pip install -r requirements.txt
-
-# Atau manual
-pip install lxml==4.9.3
+pip install lxml
 ```
 
-### Error: "Invalid SQL syntax"
-```bash
-# Pastikan format SQL adalah MySQL:
+### Error: SQL parsing gagal
+Script hanya support MySQL format:
+```sql
 ✅ Benar:
 CREATE TABLE `users` (
   `id` int AUTO_INCREMENT PRIMARY KEY,
   FOREIGN KEY (`role_id`) REFERENCES `roles`(`id`)
 );
 
-❌ Salah (PostgreSQL/SQLite):
+❌ Salah (PostgreSQL):
 CREATE TABLE users (
   id SERIAL PRIMARY KEY
 );
 ```
 
-### Diagram terlalu rapat/jauh
+### Diagram terlalu padat/renggang
 ```python
-# Edit dist/database.py
-
-# Jika terlalu rapat:
+# Edit database.py
 LAYOUT = {
-    "col_width": 700,      # Naikkan dari 500
-    "padding_x": 250,      # Naikkan dari 150
+    "col_width": 700,    # Perbesar jarak antar kolom
+    "padding_x": 200,    # Perbesar padding
+    "padding_y": 200,
 }
-
-# Jika terlalu jauh:
-LAYOUT = {
-    "col_width": 300,      # Turunkan dari 500
-    "padding_x": 80,       # Turunkan dari 150
-}
-
-# Run: python generate-erd.py
 ```
 
-### Attribute menumpuk/tidak terlihat
+### Ingin ubah warna seragam
 ```python
-# Edit dist/database.py
-
-# Kurangi attribute yang ditampilkan
-SKIP_COLUMNS = {
-    'created_at',
-    'updated_at',
-    'deleted_at',
-    'your_column_1',
-    'your_column_2',
+# Edit database.py
+COLORS = {
+    "border": "#2C3E50",  # Dark blue
+    "fill": "#ECF0F1",    # Light gray
+    "line": "#2C3E50",    # Dark blue
 }
-
-# Run: python generate-erd.py
 ```
 
----
-
-## 📚 Dokumentasi Lengkap
-
-Untuk informasi lebih detail, buka:
-
-1. **dist/README.md** - Dokumentasi teknis lengkap
-2. **dist/SETUP_GUIDE.md** - Panduan setup & customization
-3. **dist/DATABASE_EXAMPLE.md** - Penjelasan contoh database
-
----
-
-## 🎨 Output Preview
-
-### Diagram yang Dihasilkan
-
-```
-┌─────────────────┐
-│  DEPARTMENTS    │
-│  ─────────────  │
-│  id (PK)        │
-│  name           │
-│  code           │
-└────────┬────────┘
-         │ 1:N
-         ├─────────────────┐
-         │                 │
-    ┌────▼──────────┐  ┌───▼────────┐
-    │   EMPLOYEES   │  │  PROJECTS  │
-    │  ───────────  │  │ ──────────  │
-    │  id (PK)      │  │  id (PK)   │
-    │  name         │  │  name      │
-    │  dept_id (FK) │  │  budget    │
-    │  pos_id (FK)  │  └───┬────────┘
-    └────┬──────────┘      │ 1:N
-         │ M:N             │
-         │ (via)           │
-         └─────────────────┤
-                           ▼
-              ┌──────────────────────┐
-              │ PROJECT_ASSIGNMENTS  │
-              │  ──────────────────  │
-              │  id (PK)             │
-              │  employee_id (FK)    │
-              │  project_id (FK)     │
-              │  role                │
-              └──────────────────────┘
-```
-
-Ketika dibuka di draw.io:
-- ✅ Semua entity terlihat rapi
-- ✅ Relationship diamond dengan label "memiliki"
-- ✅ Cardinality (M & 1) di garis relasi
-- ✅ Attribute teorganisir per entity
-- ✅ Layout hierarki otomatis
-- ✅ Bisa di-edit & customize langsung di draw.io
-
----
-
-## 💡 Tips & Tricks
-
-### 1. Batch Process Multiple Databases
+### Config tidak berpengaruh
 ```bash
-# Process multiple databases
-for db in db1.sql db2.sql db3.sql; do
-    cp $db dist/
-    sed -i "s/SQL_FILE = .*/SQL_FILE = \"$db\"/" dist/database.py
-    cd dist && python generate-erd.py && cd ..
-done
-```
+# Pastikan database.py di folder yang sama dengan generate-erd.py
+ls -la
+# Harus ada: database.py dan generate-erd.py
 
-### 2. Auto-Open di Draw.io
-```bash
-# macOS
-open "https://app.diagrams.net/?title=$(basename $OUTPUT_FILE)&url=$(pwd)/$OUTPUT_FILE"
-
-# Atau langsung buka file lokal dengan draw.io desktop
-```
-
-### 3. Export ke Format Lain
-Di draw.io, bisa export ke:
-- PNG/JPG - untuk presentasi
-- SVG - untuk web
-- PDF - untuk dokumentasi
-
-### 4. Version Control
-```bash
-# Track database diagrams
-git add dist/MY_ERD.drawio
-
-# Bisa lihat history perubahan database
-git log --oneline dist/MY_ERD.drawio
+# Cek apakah ada syntax error di database.py
+python3 -m py_compile database.py
 ```
 
 ---
 
-## 🤝 Contributing
+## 📚 Technical Details
 
-Contributions welcome! Jika ada improvement:
+### Supported SQL Features
+- ✅ CREATE TABLE statements
+- ✅ PRIMARY KEY constraints
+- ✅ FOREIGN KEY constraints
+- ✅ ENGINE specification
+- ❌ VIEWs, TRIGGERs, PROCEDUREs (ignored)
 
-1. Fork repository
-2. Create feature branch
-3. Test dengan database berbeda
-4. Submit pull request
+### Layout Logic
+1. **Topological Sort**: Mengurutkan tabel berdasarkan dependencies
+2. **Layering**: Tabel dikelompokkan per level berdasarkan foreign keys
+3. **Dynamic Height**: Tinggi layer disesuaikan dengan jumlah max attributes
+4. **Attribute Split**: Attributes dibagi kiri-kanan untuk menghindari overlap
+
+### Junction Table Detection
+Junction table otomatis terdeteksi jika:
+- Memiliki ≥2 foreign keys (configurable via `JUNCTION_TABLE_RULES`)
+- Hanya punya max 1 kolom non-foreign key (selain timestamps)
+
+### Configuration Priority
+1. **Interactive input** - User input saat runtime (SQL file, output name, diagram name)
+2. **database.py** - Default values & styling config
+3. **Hardcoded fallback** - Jika database.py tidak ada (error)
+
+---
+
+## ⚙️ Advanced Configuration
+
+### Dynamic Height Calculation
+```python
+DYNAMIC_HEIGHT = {
+    "base": 45,
+    "attribute_spacing": 32,
+    "bottom_padding": 150,
+    "top_padding": 20,
+}
+```
+
+### Cardinality Label Positioning
+```python
+CARDINALITY_LABEL = {
+    "offset_x": -8,
+    "offset_y": -8,
+    "width": 16,
+    "height": 16,
+    "fontSize": "11",
+    "fontStyle": "1",
+}
+```
+
+### Junction Table Detection Rules
+```python
+JUNCTION_TABLE_RULES = {
+    "min_foreign_keys": 2,
+    "max_non_fk_columns": 1,
+}
+```
 
 ---
 
@@ -517,29 +457,30 @@ MIT License - Bebas digunakan & modify
 
 ---
 
-## 🆘 Support & Issues
+## 🆘 Support
 
-Jika ada pertanyaan atau issue:
-
-1. Baca file ini terlebih dahulu
-2. Cek [dist/README.md](dist/README.md)
-3. Cek [dist/SETUP_GUIDE.md](dist/SETUP_GUIDE.md)
-4. Open issue di GitHub
-
----
-
-## 🎉 Ready to Go!
-
-```bash
-# Siap?
-cd dist
-python generate-erd.py
-```
-
-Hasilnya akan membuat file `.drawio` yang bisa langsung dibuka di draw.io.
-
-**Happy ERD Generation!** 📊✨
+Jika ada issue:
+1. ✅ Pastikan file SQL dalam format MySQL
+2. ✅ Library `lxml` sudah terinstall
+3. ✅ File `database.py` ada di folder yang sama dengan `generate-erd.py`
+4. ✅ Edit **HANYA** `database.py` untuk customization
+5. ✅ **JANGAN** edit `generate-erd.py` (file akan di-obfuscate)
 
 ---
 
-**Made with ❤️ untuk membuat dokumentasi database lebih mudah**
+## 🎓 Best Practices
+
+### ✅ DO:
+- Edit `database.py` untuk semua customization
+- Gunakan interactive mode untuk testing cepat
+- Set default values di `database.py` untuk workflow berulang
+- Commit `database.py` ke Git untuk team consistency
+- Test config changes dengan file SQL kecil dulu
+
+### ❌ DON'T:
+- Jangan edit `generate-erd.py` (akan di-obfuscate)
+- Jangan hardcode config di `generate-erd.py`
+- Jangan skip primary keys di `SKIP_COLUMNS`
+- Jangan hapus `database.py` (mandatory file)
+
+---
