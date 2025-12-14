@@ -1,0 +1,10 @@
+*
+!.gitignore
+!README.md
+!dist/
+!dist/**
+
+dist/*.drawio
+dist/__pycache__/
+dist/*.pyc
+dist/.DS_Store
