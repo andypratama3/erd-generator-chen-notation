@@ -10,6 +10,15 @@ Menggunakan **Chen's ER Model** dengan:
 
 ---
 
+---
+
+> **⚠️ CATATAN PENTING:**  
+> Diagram yang dihasilkan **tidak sepenuhnya rapi** dan memerlukan **penyesuaian manual** di draw.io.  
+> Script ini menghasilkan struktur dasar ERD - Anda perlu **mengedit posisi, spacing, dan layout** untuk hasil yang lebih optimal.  
+> Gunakan fitur drag-and-drop di draw.io untuk merapikan diagram sesuai kebutuhan.
+
+---
+
 ## ✨ Fitur Utama
 
 ✅ **Parse SQL Otomatis** - Baca file SQL dan ekstrak struktur database  
