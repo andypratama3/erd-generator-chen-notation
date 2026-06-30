@@ -1,0 +1,428 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram name="ERD Chen FINAL">
+    <mxGraphModel dx="1200" dy="800">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="e174a504-0f33-429b-9357-6fd983f66ee4" value="jadwal_ronda" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="150" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="1a49ffe1-2a85-47ea-8c5e-6e30702ab98c" value="area_patroli" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="c00932cf-8809-40e9-b232-f14d864204a1" edge="1" source="1a49ffe1-2a85-47ea-8c5e-6e30702ab98c" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="67da566b-6988-4468-833b-2cc489ca65e8" value="jadwal_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="9be28f8b-fab4-4654-be9b-442a0ee47618" edge="1" source="67da566b-6988-4468-833b-2cc489ca65e8" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="793fb044-66ca-46b6-ac4a-726bfe279098" value="jam_mulai" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="901ee7e3-74b0-4f7f-a2c6-f5ca2e225809" edge="1" source="793fb044-66ca-46b6-ac4a-726bfe279098" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="1db3a043-8820-4b84-b5bf-b13b39266fd1" value="jam_selesai" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="034b3cde-b067-47d1-bdcf-9f80ac3e4768" edge="1" source="1db3a043-8820-4b84-b5bf-b13b39266fd1" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9757d032-c0d8-4029-8e25-fcf0894587ca" value="status_kehadiran" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="021802be-a6a8-46b9-9179-257ba062d8dc" edge="1" source="9757d032-c0d8-4029-8e25-fcf0894587ca" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="4dc11f0c-7e21-4640-a277-9facd38c6583" value="tanggal_jaga" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="dd1a2aab-ed74-4de2-a9a0-4ad174ceac24" edge="1" source="4dc11f0c-7e21-4640-a277-9facd38c6583" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="91d9165a-2b3c-4bc0-8eaf-30290dac7d4e" value="warga_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="402" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="92ccb3a2-a117-4eb3-8d55-d730416be763" edge="1" source="91d9165a-2b3c-4bc0-8eaf-30290dac7d4e" target="e174a504-0f33-429b-9357-6fd983f66ee4" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="16a5250f-fb09-4fa3-9a7e-d1c675e55629" value="kategori_laporan" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="650" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="11a42eca-dc1f-4753-82a0-dd782896850f" value="kategori_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="fefa8cb3-4928-4778-805b-7c12654b0eb7" edge="1" source="11a42eca-dc1f-4753-82a0-dd782896850f" target="16a5250f-fb09-4fa3-9a7e-d1c675e55629" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="60385bfe-6935-48d3-b7f3-60230d4feb57" value="nama_kategori" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="359710ce-5bc5-47af-8917-bb2eaa825431" edge="1" source="60385bfe-6935-48d3-b7f3-60230d4feb57" target="16a5250f-fb09-4fa3-9a7e-d1c675e55629" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="52d70b6d-84e2-43bd-96ff-4e532b5d148b" value="prioritas" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="480" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="d2f536d6-b85e-4c0a-8a92-2a9976c10d7b" edge="1" source="52d70b6d-84e2-43bd-96ff-4e532b5d148b" target="16a5250f-fb09-4fa3-9a7e-d1c675e55629" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" value="laporan" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="e4aea956-7e9a-425c-95f3-e34b41a8770e" value="deskripsi_masalah" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="147513c9-9f05-4e81-8c16-51c7b15a2a57" edge="1" source="e4aea956-7e9a-425c-95f3-e34b41a8770e" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="f113634d-2ba1-4fc0-8912-69d6939bed2b" value="foto_bukti" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="bfaf3b80-6978-426c-985d-b554fbce2221" edge="1" source="f113634d-2ba1-4fc0-8912-69d6939bed2b" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9c4ed681-53c5-4f41-8682-1229cd41b666" value="kategori_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="40eab793-bb9a-4165-91e8-8cf34d995904" edge="1" source="9c4ed681-53c5-4f41-8682-1229cd41b666" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c1a020ae-e949-4c22-a09c-82f70f3d14c4" value="laporan_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="9732ca3f-eadb-414d-840e-9b196cc7a273" edge="1" source="c1a020ae-e949-4c22-a09c-82f70f3d14c4" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ca30e3ac-797a-4a09-9b19-fc5056d9d8bf" value="status_laporan" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="f5b16ea5-9a61-4af3-a229-3991b76ecf0f" edge="1" source="ca30e3ac-797a-4a09-9b19-fc5056d9d8bf" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="515399ff-8f8d-49e1-b881-2d95160303a5" value="tanggal_lapor" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="1569a20a-507b-4d9e-8fe8-8cf04299fa87" edge="1" source="515399ff-8f8d-49e1-b881-2d95160303a5" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="1158476c-367d-40aa-8cb1-5e51db1dafc2" value="warga_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="980" y="402" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ec92275d-c5a0-4e8b-a0af-5be9e58e5bd7" edge="1" source="1158476c-367d-40aa-8cb1-5e51db1dafc2" target="c9895a0c-fe6a-44b7-a8e1-014f5c7529ed" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="c5081447-8b4b-4c72-804b-4cefffd0c6fb" value="log_lingkungan" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="dba43172-7c26-42dd-868f-e6117b1814d5" value="device_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="948bbd57-6c80-4413-b9e9-8c18f451431c" edge="1" source="dba43172-7c26-42dd-868f-e6117b1814d5" target="c5081447-8b4b-4c72-804b-4cefffd0c6fb" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="595da912-96ee-4a4a-89e8-3bcadfd54af4" value="keterangan" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="163a8e62-a3a3-410e-b6be-8e74a2ab8778" edge="1" source="595da912-96ee-4a4a-89e8-3bcadfd54af4" target="c5081447-8b4b-4c72-804b-4cefffd0c6fb" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b47ff75f-94ae-4497-b92f-0ea55dd3c51c" value="log_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="2ee526ee-4102-4a13-a091-2206aa217e39" edge="1" source="b47ff75f-94ae-4497-b92f-0ea55dd3c51c" target="c5081447-8b4b-4c72-804b-4cefffd0c6fb" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a7543149-cb00-4b7e-ad1b-6cb2254c5e4c" value="nilai_data" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="6391d122-ac75-4207-945a-a138eccd9a2b" edge="1" source="a7543149-cb00-4b7e-ad1b-6cb2254c5e4c" target="c5081447-8b4b-4c72-804b-4cefffd0c6fb" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9e06db5d-1659-4b65-859a-8a45ff4eec8e" value="satuan" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="8ddf96ed-0e72-485c-9db1-0baa54dedd0b" edge="1" source="9e06db5d-1659-4b65-859a-8a45ff4eec8e" target="c5081447-8b4b-4c72-804b-4cefffd0c6fb" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="eacc35bd-12d6-43fe-8904-5b529c35756a" value="waktu_rekam" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="a359450a-059a-4112-981f-9746d1a40e1d" edge="1" source="eacc35bd-12d6-43fe-8904-5b529c35756a" target="c5081447-8b4b-4c72-804b-4cefffd0c6fb" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="01cd0219-427f-4273-bdb4-88446bc6057d" value="perangkat_iot" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2150" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="04603f8a-5639-42f0-aaf9-315f1d14901b" value="device_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ab5e7bdc-54a1-4f01-938e-41831b08c6c8" edge="1" source="04603f8a-5639-42f0-aaf9-315f1d14901b" target="01cd0219-427f-4273-bdb4-88446bc6057d" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="0218df7c-4dd6-47ef-b372-15ad8e45d08c" value="lokasi_koordinat" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ffe18604-be02-44af-8fcc-8b34b602eb8b" edge="1" source="0218df7c-4dd6-47ef-b372-15ad8e45d08c" target="01cd0219-427f-4273-bdb4-88446bc6057d" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="92f158d5-1683-4fba-8997-5fae63d18a8c" value="nama_perangkat" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ef2d75a3-e9e7-4d36-8a18-a342caa7f324" edge="1" source="92f158d5-1683-4fba-8997-5fae63d18a8c" target="01cd0219-427f-4273-bdb4-88446bc6057d" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="1a22b8e3-c220-40c3-8ed6-ed007eb9a1b7" value="rumah_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="947fbbc2-7673-4bef-a127-ce90838e6c00" edge="1" source="1a22b8e3-c220-40c3-8ed6-ed007eb9a1b7" target="01cd0219-427f-4273-bdb4-88446bc6057d" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="7a67a6b8-e560-4242-b402-869d11d52a37" value="status_aktif" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="f535bbcf-35f7-43a8-b098-4467e8f02887" edge="1" source="7a67a6b8-e560-4242-b402-869d11d52a37" target="01cd0219-427f-4273-bdb4-88446bc6057d" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e7d8aabf-66e9-44b5-b70a-847c216a2c9d" value="tipe_perangkat" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="377c3f2c-fae6-43be-9d17-ea9354125d5e" edge="1" source="e7d8aabf-66e9-44b5-b70a-847c216a2c9d" target="01cd0219-427f-4273-bdb4-88446bc6057d" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="75fbcb6b-db42-4fba-bbe2-fe905c3c5862" value="roles" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2650" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="2f06432c-aa7a-401c-b170-b3f466cbe4b1" value="deskripsi" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="83238ccb-7480-4db8-92f8-1740db3e8ad4" edge="1" source="2f06432c-aa7a-401c-b170-b3f466cbe4b1" target="75fbcb6b-db42-4fba-bbe2-fe905c3c5862" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="5e715b3e-40d5-4e7b-8f50-9faa1a839d60" value="nama_role" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="0c8d43e5-a98e-49e0-8412-38aa83434d7c" edge="1" source="5e715b3e-40d5-4e7b-8f50-9faa1a839d60" target="75fbcb6b-db42-4fba-bbe2-fe905c3c5862" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e9ec33b7-f091-48c3-8cb8-82c961249a3c" value="role_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="833affef-67bf-4e3a-a2da-04357d84e258" edge="1" source="e9ec33b7-f091-48c3-8cb8-82c961249a3c" target="75fbcb6b-db42-4fba-bbe2-fe905c3c5862" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="ac382c30-7d7b-43e1-871a-4f9234974357" value="rumah" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3150" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="d680e79a-1698-4729-9f48-bf822577dfd5" value="jalan_utama" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="dcd57402-76f1-4391-82a7-2c20addc556d" edge="1" source="d680e79a-1698-4729-9f48-bf822577dfd5" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a79c837c-1a74-4e1f-8d4c-9a935b2b4bef" value="kepala_keluarga_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="a625c7be-5881-4438-b317-78e76701b454" edge="1" source="a79c837c-1a74-4e1f-8d4c-9a935b2b4bef" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="4fe460d4-0d79-4530-b1b2-3004afd012a8" value="nomor_rumah" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="4eed371c-2d77-45db-8940-be395729d5f5" edge="1" source="4fe460d4-0d79-4530-b1b2-3004afd012a8" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9228c835-82c2-4dc3-8c78-5343f22ef05d" value="rt" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ea0fc06e-baae-4733-ab60-bda54c1d0006" edge="1" source="9228c835-82c2-4dc3-8c78-5343f22ef05d" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="87ca79b7-4633-412e-9303-2df08562c39a" value="rumah_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="edeec5c0-1569-4430-a871-da0feef383b1" edge="1" source="87ca79b7-4633-412e-9303-2df08562c39a" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a92f93f6-7772-4905-a947-44ea7210310b" value="rw" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="ae7c7143-c1af-4a85-8d70-ab5ce2643ee3" edge="1" source="a92f93f6-7772-4905-a947-44ea7210310b" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="aeeb4dba-78ef-4763-8834-2a61966cce7f" value="status_huni" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="2980" y="402" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="133ffcb9-3976-4f22-b249-cba6c50015bf" edge="1" source="aeeb4dba-78ef-4763-8834-2a61966cce7f" target="ac382c30-7d7b-43e1-871a-4f9234974357" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" value="tamu" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3650" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="315a9b85-dfee-40d2-af3d-17ac14fe8b6c" value="nama_tamu" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="c7a51b5b-30d8-4a9c-b2ba-5d4e2703543d" edge="1" source="315a9b85-dfee-40d2-af3d-17ac14fe8b6c" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="33892ca3-5b47-4d8e-896d-80456ebfafee" value="nomor_identitas" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="2c99a056-a4d1-4309-a6ed-54b3fe54c2c5" edge="1" source="33892ca3-5b47-4d8e-896d-80456ebfafee" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="963be5d4-2737-4359-ad55-12aa29caf134" value="nomor_kendaraan" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="f2331de7-e18b-40aa-bb70-035281279e93" edge="1" source="963be5d4-2737-4359-ad55-12aa29caf134" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="0353b2a4-281d-40ed-87a0-28091c34add8" value="rumah_tujuan_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5c19255-a998-4baa-aa80-04d3cb488619" edge="1" source="0353b2a4-281d-40ed-87a0-28091c34add8" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="78e1cd94-3fe4-483f-bdf4-d13ea9975c5e" value="tamu_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="603e178e-a315-4f85-ae25-24f70f14856d" edge="1" source="78e1cd94-3fe4-483f-bdf4-d13ea9975c5e" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="7ba51007-7064-4f10-af67-9d2f21c20376" value="tujuan_kunjungan" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="9ad391b9-ea14-43cb-9a3f-49e2a9507455" edge="1" source="7ba51007-7064-4f10-af67-9d2f21c20376" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="0cc4ce7a-8427-4720-ad95-120287b6c7fd" value="waktu_keluar" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="402" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="dab74059-08ca-4b3b-85d9-e5a6eba38d2c" edge="1" source="0cc4ce7a-8427-4720-ad95-120287b6c7fd" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="bd68582c-8dc6-49f9-938e-eafd067146e7" value="waktu_masuk" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="434" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="4cb83b69-a546-40f2-934c-58cc2f8cbae4" edge="1" source="bd68582c-8dc6-49f9-938e-eafd067146e7" target="3e4f2a02-f1c7-4c26-af08-c3ef2162ecb8" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="793bcb64-b818-400d-a10d-6eaf38e5060c" value="users" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4150" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="2a7ecd4f-13a3-40e7-a0d2-101d096a0258" value="email" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3980" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="5ab2be97-0b35-4f3e-87dc-3f903e41d99d" edge="1" source="2a7ecd4f-13a3-40e7-a0d2-101d096a0258" target="793bcb64-b818-400d-a10d-6eaf38e5060c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="38ab6085-36c9-44ca-9c2d-6f4f01db1095" value="password" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3980" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="306ea991-8c37-489b-9094-daffbf4a09ae" edge="1" source="38ab6085-36c9-44ca-9c2d-6f4f01db1095" target="793bcb64-b818-400d-a10d-6eaf38e5060c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9fb76359-2cfe-4176-95bc-96fe72df142b" value="role_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3980" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="f3aabec1-7514-4f62-ad0a-70e470b5c080" edge="1" source="9fb76359-2cfe-4176-95bc-96fe72df142b" target="793bcb64-b818-400d-a10d-6eaf38e5060c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="49717668-8c3e-46ef-b312-2138e6eb298c" value="user_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3980" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="6e6d411f-2db2-429d-a4fc-81d327ed747b" edge="1" source="49717668-8c3e-46ef-b312-2138e6eb298c" target="793bcb64-b818-400d-a10d-6eaf38e5060c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="28b1b8f5-f82b-40f4-a78b-215bd7795ca8" value="username" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="3980" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="1bbb10cd-75b2-4ee8-a6ef-82ca4bc71022" edge="1" source="28b1b8f5-f82b-40f4-a78b-215bd7795ca8" target="793bcb64-b818-400d-a10d-6eaf38e5060c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="2b1ae55f-e619-4175-a911-7575e4ef7d4e" value="warga" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4650" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="4d3230af-eeb3-411a-b7c9-8b8f62e69619" value="jenis_kelamin" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="df63314c-72c8-4670-8862-85a27a915d4e" edge="1" source="4d3230af-eeb3-411a-b7c9-8b8f62e69619" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="381ab36a-31ae-4c60-8a43-365a5a00fcca" value="nama_lengkap" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="3df58bcd-9d35-44ac-84be-42b1a6c979e7" edge="1" source="381ab36a-31ae-4c60-8a43-365a5a00fcca" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="9f1c9e38-a93f-4d9d-96c9-a8c5fd85eaba" value="nik" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="e070205d-35cb-4ab9-ae0b-4c0ac9de7749" edge="1" source="9f1c9e38-a93f-4d9d-96c9-a8c5fd85eaba" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="77479a7a-40b7-494a-a699-b71b8ac4d9b4" value="pekerjaan" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="2c2fb5fa-b75d-440c-834b-c5eef3d06087" edge="1" source="77479a7a-40b7-494a-a699-b71b8ac4d9b4" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="5e2bef31-b8ce-44e6-bcb2-c9480063c2c5" value="tanggal_lahir" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="338" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="7528a894-6a6d-4101-8cdd-eb82a00f255c" edge="1" source="5e2bef31-b8ce-44e6-bcb2-c9480063c2c5" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a14a41c4-c9ab-4d32-a05d-029d436327aa" value="tempat_lahir" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="370" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="521d42b0-abbd-4285-9a29-8363280740fb" edge="1" source="a14a41c4-c9ab-4d32-a05d-029d436327aa" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b7a2d94e-12d0-4f09-891d-02649f11abbb" value="user_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="402" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="34a8ed39-3eba-42cd-a325-5d6565af1040" edge="1" source="b7a2d94e-12d0-4f09-891d-02649f11abbb" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="a5abe47a-d3f1-4f06-a29c-69aedb59043d" value="warga_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4480" y="434" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="3c0921d2-9e73-4bb3-acf8-e2f492acc321" edge="1" source="a5abe47a-d3f1-4f06-a29c-69aedb59043d" target="2b1ae55f-e619-4175-a911-7575e4ef7d4e" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="73c8b03a-de91-4b91-9b0b-9bde20e4884c" value="warga_telepon" style="shape=rectangle;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;fontStyle=1;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="5150" y="150" width="160" height="45" as="geometry"/>
+        </mxCell>
+        <mxCell id="c0083480-f3d2-46b6-a59c-a9605f72b962" value="jenis_kontak" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4980" y="210" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="5f82fad4-f666-41c9-b8b9-6a604f6e80ac" edge="1" source="c0083480-f3d2-46b6-a59c-a9605f72b962" target="73c8b03a-de91-4b91-9b0b-9bde20e4884c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b73f08da-e3da-440e-a0d1-b9ecd7a23ee3" value="nomor_telepon" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4980" y="242" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="e19b9573-631b-4ef1-b388-cdb25231e3a4" edge="1" source="b73f08da-e3da-440e-a0d1-b9ecd7a23ee3" target="73c8b03a-de91-4b91-9b0b-9bde20e4884c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="b6b9bde5-9c7b-40d5-b876-801d35e14666" value="telepon_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4980" y="274" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="4205b788-213e-4806-8e85-4fdd29be84f0" edge="1" source="b6b9bde5-9c7b-40d5-b876-801d35e14666" target="73c8b03a-de91-4b91-9b0b-9bde20e4884c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="4fa9e797-06e4-43a2-bee5-630572a8cdc7" value="warga_id" style="ellipse;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=#ffffff;strokeColor=#000000;fontSize=7;rounded=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="4980" y="306" width="120" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="873161e9-4689-45fe-86a3-31024da0d452" edge="1" source="4fa9e797-06e4-43a2-bee5-630572a8cdc7" target="73c8b03a-de91-4b91-9b0b-9bde20e4884c" style="endArrow=none;strokeWidth=1;strokeColor=#000000;curved=1;" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
